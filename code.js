@@ -34,6 +34,15 @@ const isFive = function (input) {
     }
 }
 
-const isEven = function(input) {
+const isEven = function (input) {
     return input % 2 === 0
+}
+
+const isVowel = function (input) {
+    var vowels = ['a', 'e', 'i', 'o', 'u']
+    if (typeof input === 'number' || typeof input !== 'string') {
+        return false
+    } else {
+        return vowels.includes(input.toLowerCase())
+    }
 }

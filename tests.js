@@ -76,25 +76,53 @@ describe('isEven', function () {
     it('should return false when isEven([1, 2, 3])', function () {
         expect(isEven([1, 2, 3])).toBe(false)
     });
-    it('should return false when isEven("banana")', function() {
+    it('should return false when isEven("banana")', function () {
         expect(isEven("string")).toBe(false)
     });
-    it('should return true when isEven("8")', function() {
+    it('should return true when isEven("8")', function () {
         expect(isEven("8")).toBe(true)
     });
-    it('should return true when isEven(2)', function() {
+    it('should return true when isEven(2)', function () {
         expect(isEven(2)).toBe(true)
     });
-    it('should return true when isEven(-4)', function() {
+    it('should return true when isEven(-4)', function () {
         expect(isEven(-4)).toBe(true)
     });
-    it('should return false when isEven(3)', function() {
+    it('should return false when isEven(3)', function () {
         expect(isEven(3)).toBe(false)
     });
-    it('should return false when isEven(Infinity)', function() {
+    it('should return false when isEven(Infinity)', function () {
         expect(isEven(Infinity)).toBe(false)
     });
-    it('should return false when called with boolean isEven(true)', function() {
+    it('should return false when called with boolean isEven(true)', function () {
         expect(isEven(true)).toBe(false)
     });
+})
+
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function')
+    });
+    it('should return false when isVowel()', function () {
+        expect(isVowel()).toBe(false)
+    });
+    it('should return true when isVowel("a")', function () {
+        expect(isVowel('a')).toBe(true)
+    });
+    it('should return true when isVowel("A")', function () {
+        expect(isVowel('A')).toBe(true)
+    });
+    it('should return true when isVowel("y")', function () {
+        expect(isVowel('y')).toBe(false)
+    });
+    it('should return true when isVowel(4)', function () {
+        expect(isVowel(4)).toBe(false)
+    });
+    it('should return false when isVowel(true)', function () {
+        expect(isVowel(true)).toBe(false)
+    });
+    it('should return false when isVowel("banana")', function () {
+        expect(isVowel('banana')).toBe(false)
+    });
+
 })
