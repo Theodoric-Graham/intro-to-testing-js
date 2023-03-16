@@ -8,5 +8,20 @@ const helloWorld = function () {
 }
 
 const sayHello = function (input) {
-return 'Hello, ' + input+ '!'
+    if (typeof input !== 'string') {
+        console.log(input+': Hello, World!')
+        return 'Hello, World!'
+    } else {
+        console.log('Hello, ' + input + '!')
+        return 'Hello, ' + input + '!'
+    }
+
 }
+
+sayHello(null)
+sayHello('')
+sayHello(2.3)
+sayHello('5')
+sayHello([1, 2, 3])
+// var string = 'hello'
+// console.log(typeof Number(string), Number(string))
