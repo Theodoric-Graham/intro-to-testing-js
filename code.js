@@ -7,6 +7,6 @@ const helloWorld = function() {
     return "Hello, World!";
 }
 
-function sayHello() {
-
+const sayHello = function() {
+    return ''
 }
