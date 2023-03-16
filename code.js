@@ -46,3 +46,14 @@ const isVowel = function (input) {
         return vowels.includes(input.toLowerCase())
     }
 }
+
+const add = function (a, b) {
+    if (isNaN(a) || isNaN(b)) {
+        return 'NaN'
+    } else {
+        //using + to convert string to number
+        return +a + +b
+    }
+
+}
+
