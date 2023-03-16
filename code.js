@@ -9,19 +9,27 @@ const helloWorld = function () {
 
 const sayHello = function (input) {
     if (typeof input !== 'string') {
-        console.log(input+': Hello, World!')
+        // console.log(input + ': Hello, World!')
         return 'Hello, World!'
     } else {
-        console.log('Hello, ' + input + '!')
+        // console.log('Hello, ' + input + '!')
         return 'Hello, ' + input + '!'
     }
 
 }
 
-sayHello(null)
-sayHello('')
-sayHello(2.3)
-sayHello('5')
-sayHello([1, 2, 3])
+// sayHello(null)
+// sayHello('')
+// sayHello(2.3)
+// sayHello('5')
+// sayHello([1, 2, 3])
 // var string = 'hello'
 // console.log(typeof Number(string), Number(string))
+
+const isFive = function (input) {
+    if (input === 5 || +input === 5) {
+        return true
+    } else {
+        return false
+    }
+}
