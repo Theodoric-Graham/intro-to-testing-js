@@ -33,3 +33,7 @@ const isFive = function (input) {
         return false
     }
 }
+
+const isEven = function(input) {
+    return input % 2 === 0
+}
